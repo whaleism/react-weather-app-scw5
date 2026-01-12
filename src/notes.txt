@@ -1,0 +1,11 @@
+let apiKey = "3f3b4696cb6569teb708ec8264d1ad5o";
+    let units = "metric";
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=${units}`;
+
+forecast
+let apiKey = "3f3b4696cb6569teb708ec8264d1ad5o";
+    let units = "metric";
+let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=${units}`
+
+test - to pull up as url and look at list of objects
+https://api.shecodes.io/weather/v1/forecast?query=Seoul&key=3f3b4696cb6569teb708ec8264d1ad5o&units=imperial
