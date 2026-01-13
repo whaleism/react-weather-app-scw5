@@ -9,3 +9,21 @@ let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${ap
 
 test - to pull up as url and look at list of objects
 https://api.shecodes.io/weather/v1/forecast?query=Seoul&key=3f3b4696cb6569teb708ec8264d1ad5o&units=imperial
+
+forecast gps
+let apiKey = "3f3b4696cb6569teb708ec8264d1ad5o";
+    let units = "metric";
+    let longitude = response.data.coordinates.longitude;
+    let latitude = response.data.coordinates.latitude;
+
+https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${key}&units=${units}
+
+let apiKey = "3f3b4696cb6569teb708ec8264d1ad5o";
+    let units = "metric";
+    let longitude = props.coordinates.longitude;
+    let latitude = props.coordinates.latitude;
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=${units}`;
+
+    axios.get(apiUrl).then(handleResponse);
+
+    return null;
